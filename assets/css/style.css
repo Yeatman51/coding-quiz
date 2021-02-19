@@ -1,0 +1,99 @@
+body {
+    background-color: #5602F5;
+    color: #fff;
+}
+
+/* Start Quiz Button */
+.start-btn, 
+.info-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.start-btn button {
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 25px;
+    background-color: #8E0DDE;
+    border: 5px solid #8E0DDE;
+    color: white;
+}
+
+/* INFO Start Box */
+.info-box {
+    display: none;
+    width: 60%;
+    font-size: 20px;
+    background-color: #8E0DDE;
+    border-radius: 25px;
+}
+
+.info-box .info-title {
+    width: 100%;
+    height: 60px;
+    border-bottom: 3px solid #f3f3f3;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+    /* display: flex; */
+}
+
+.info-box .info-list {
+    padding: 15px 35px;
+}
+
+.info-box .info-list .info {
+    margin: 5px 0px;
+    font-size: 20px;
+}
+
+ .info-list .info span {
+    color: #EB02A6;
+    font-size: 25px;
+}
+
+.info-box .buttons {
+height: 60px;
+border-top: 3px solid #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0px 25px;
+}
+
+.info-box .buttons button {
+    border-radius: 15px;  
+    color: white;
+    background-color: #EB02A6;
+    border: 3px solid #EB02A6;
+    cursor: pointer;  
+    font-size: 20px;
+    margin: 0 9px;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+/* .button button.quit {
+    background-color: #EB02A6;
+    } */
+    
+/* .button button.restart {
+    background-color: #EB02A6;
+    border: 3px solid #EB02A6;
+    background-color: #EB02A6; 
+    } */
+
+/* .quit :hover {
+    transition: all 0.3s ease;
+background-color: #fff;
+color: #EB02A6;
+}
+
+.button button.restart:hover {
+    
+} */
