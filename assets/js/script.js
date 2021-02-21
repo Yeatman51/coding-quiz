@@ -227,7 +227,7 @@ function showResult(){
 
 function bestScore()
 {
-    document.getElementById("score_ds").innerHTML ="activeResult" + scoreText; 
+    document.getElementById("score_ds").innerHTML =" " + correcAns; 
 
 }
 
