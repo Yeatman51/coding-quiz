@@ -227,7 +227,7 @@ function showResult(){
 
 function bestScore()
 {
-    document.getElementById(".score_text").style.display = "block"; 
+    document.getElementById("score_ds").innerHTML ="activeResult" + scoreText; 
 
 }
 
@@ -237,13 +237,13 @@ function startTimer(time){
     counter = setInterval(timer, 1000);
     function timer(){
         timeCount.textContent = time; //changing the value of timeCount with time value
-        time--; //decrement the time value
-        if(time < 9){ //if timer is less than 9
+        time--; 
+        if(time < 9){ 
             let addZero = timeCount.textContent; 
-            timeCount.textContent = "0" + addZero; //add a 0 before time value
+            timeCount.textContent = "0" + addZero; 
         }
-        if(time < 0){ //if timer is less than 0
-            clearInterval(counter); //clear counter
+        if(time < 0){ 
+            clearInterval(counter); 
             timeText.textContent = "Time Off"; //change the time text to time off
             const allOptions = option_list.children.length; //getting all option items
             let correcAns = questions[que_count].answer; //getting correct answer from array
@@ -278,3 +278,20 @@ function queCounter(index){
     let totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }
+
+// function beginGame() {
+//     let remainingTime = 60;
+    
+//         let timerInterval = setInterval(function () {
+//             remainingTime--;
+//             countdownEl.textContent = remainingTime + " seconds remaining";
+//             console.log(remainingTime);
+//             if (remainingTime === 0) {
+//                 clearInterval(timerInterval);
+//                 failure();
+//             }
+    
+//         }, 1000);
+//     }
+
+// beginBtn.addEventListener("click", beginGame);

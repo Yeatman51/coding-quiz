@@ -172,12 +172,19 @@ body{
     color: white;
 }
 
-.quiz_box header .score_text{
-    position: absolute;
+.quiz_box header .score_ds{
+    /* position: absolute; */
     bottom: 0px;
     left: 0px;
-    height: 3px;
+    height: 35px;
+    border: 1px solid #EB02A6;
+    background-color: #EB02A6;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+    text-align: center;
 }
 
 section{
